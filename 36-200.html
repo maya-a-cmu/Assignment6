@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 6</title>
+    <meta charset="UTF-8">
+    
+    <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+
+    <!-- javascript -->
+    <script src="main.js" type="text/javascript"></script>
+
+
+</head>
+
+
+
+<body>
+   
+    <div id="welcomeHead">
+      <header>
+          <h1>Course Description</h1>
+      </header>
+    </div>
+    
+    
+    <div id="tabs">
+            <button type="button" onclick="window.location.href='index.html';"> Home</button>
+            <button type="button" onclick="window.location.href='courses.html';"> Courses</button>
+            <button type="button" onclick="window.location.href='myCourses.html';" id="result"> My Courses (3)</button>
+
+    </div>     
+
+    <div id="courses">
+        <div class="list">
+          <h3>
+            36-200 Reasoning with Data
+          </h3>
+          <nav>
+              Professor Smith<br>
+              <br>
+              Units: 9<br>
+              FCE: 6<br>
+              <br>
+              Description:<br>
+              “This course is about statistical decisions and working with data. We will learn about hypothesis testing and other statistical practices in this course.”
+              <br>
+            </nav>
+            
+            <br>
+            <br>
+
+           
+         
+            
+<! –– Selection Selector ––>
+
+
+            <h4 class="dropdown">Course Day</h4>
+                <select onchange="changeSection()" id="course" class="dropdown">  
+                <option value="None">None</option>  
+                <option value="Monday & Wednesday">Monday & Wednesday</option>  
+                <option value="Tuesday & Thursday">Tuesday & Thursday</option>  
+                </select>  
+                
+              <p><button onclick="clickCounter()" type="button">Add Section</button></p>
+              <div id="result"></div>
+
+            <button onclick="readValue()">See Section</button>
+            <p id="demo"></p>
+            
+            
+            
+            <br>
+            <br>   
+        </div> 
+    </div>
+
+
+
+
+
+
+
+    </div>
+          
+
+        </div>
+
+
+
+
+</div>
+
+</body>
+
+</html>

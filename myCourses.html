@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 6</title>
+    <meta charset="UTF-8">
+    
+    <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+
+    <!-- javascript -->
+    <script src="main.js" type="text/javascript"></script>
+
+
+</head>
+
+
+
+<body>
+   
+
+    <div id="welcomeHead">
+      <header>
+          <h1>My Course</h1>
+      </header>
+    </div>
+    
+    
+    <div id="tabs">
+            <button type="button" onclick="window.location.href='index.html';"> Home</button>
+            <button type="button" onclick="window.location.href='courses.html';"> Courses</button>
+            <button type="button" onclick="window.location.href='myCourses.html';" id="result"> My Courses (3)</button>
+
+    </div>     
+
+            
+<! –– Selection Selector ––>
+
+        <p>The following are courses that you have selected to be in your schedule:</p>
+            
+
+
+        <div id="lists">
+            <div class="list">
+                <ol id="course-list">
+                   
+                    <button onclick="readValue()">Show my section for 36-200</button>
+                    <p id="demo"></p>
+                    
+
+                   
+                    <li>
+                        <label for="checkA">Reasoning with Data (36-200) Section A: Monday 1-2pm 
+Wean Hall 5234</label>
+                        <button class="delete-item" onclick="deleteListCourse(this.parentNode)">Drop Course</button>
+                    </li>
+                    
+                    
+
+                    <li>
+                        <label for="checkB">Differential and Integral Calculus (88-120) Section B: Monday 2-3pm
+Wean Hall 5234</label>
+                        <button class="delete-item" onclick="deleteListCourse(this.parentNode)">Drop Course</button>
+                    </li>                    
+                    
+                    
+
+                    <li>
+                        <label for="checkC">Analytical Foundations (21-120) Section C: Tuesday 1-2pm
+Wean Hall 5234</label>
+                        <button class="delete-item" onclick="deleteListCourse(this.parentNode)">Drop Course</button>
+                    </li>                    
+               
+                    
+                    
+                </ol>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+</div>
+
+</body>
+
+</html>

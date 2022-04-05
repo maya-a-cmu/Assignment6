@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 6</title>
+    <meta charset="UTF-8">
+    
+    <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+
+</head>
+
+
+
+
+<body>
+   
+    <div id="welcomeHead">
+      <header>
+          <h1>Course Description</h1>
+      </header>
+    </div>
+    
+    
+    <div id="tabs">
+            <button type="button" onclick="window.location.href='index.html';"> Home</button>
+            <button type="button" onclick="window.location.href='courses.html';"> Courses</button>
+            <button type="button" onclick="window.location.href='myCourses.html';" id="result"> My Courses</button>
+
+    </div>     
+
+    <div id="courses">
+        <div class="list">
+          <h3>
+            21-120 Differential and Integral Calculus
+          </h3>
+          <nav>
+              Professor John<br>
+              <br>
+              Units: 9<br>
+              FCE: 6<br>
+              <br>
+              Description:<br>
+              “This course is an introduction to learning calculus. Student should have a firm understanding from prerequsite courses. Key topics include limits, matricies, and graphing.”
+              <br>
+            </nav>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            
+            
+<! –– Selection Selector ––>
+
+            <h4 class="dropdown">Course Day</h4>
+                <select onchange="changeSection()" id="course" class="dropdown">  
+                <option value="Monday & Wednesday">Monday & Wednesday</option>  
+                <option value="Tuesday & Thursday">Tuesday & Thursday</option>  
+                </select>  
+                
+              <p><button onclick="clickCounter()" type="button">Add Section</button></p>
+              <div id="result"></div>
+
+
+            <br>
+            <button onclick="readValue()">Get the item value</button>
+            <p id="demo"></p>
+            
+            
+            
+            <br>
+            <br>   
+        </div> 
+    </div>
+
+
+</div>
+
+</body>
+
+</html>

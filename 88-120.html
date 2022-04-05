@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 6</title>
+    <meta charset="UTF-8">
+    
+    <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+</head>
+
+
+
+
+
+<body>
+   
+    <div id="welcomeHead">
+      <header>
+          <h1>Course Description</h1>
+      </header>
+    </div>
+    
+    
+    <div id="tabs">
+            <button type="button" onclick="window.location.href='index.html';"> Home</button>
+            <button type="button" onclick="window.location.href='courses.html';"> Courses</button>
+            <button type="button" onclick="window.location.href='myCourses.html';" id="result"> My Courses (3)</button>
+
+    </div>     
+
+    <div id="courses">
+        <div class="list">
+          <h3>
+            88-120 Analytical Foundations
+          </h3>
+          <nav>
+              Professor Smith<br>
+              <br>
+              Units: 9<br>
+              FCE: 6<br>
+              <br>
+              Description:<br>
+              “This course is an introduction to the role of economics in policy. We will cover the rise of manufacturing and the role it plays in the economy today.”
+              <br>
+            </nav>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            
+            
+            
+            
+<! –– Selection Selector ––>
+
+            <h4 class="dropdown">Course Day</h4>
+                <select onchange="changeSection()" id="course" class="dropdown">  
+                <option value="Monday & Wednesday">Monday & Wednesday</option>  
+                <option value="Tuesday & Thursday">Tuesday & Thursday</option>  
+                </select>  
+                
+              <p><button onclick="clickCounter()" type="button">Add Section</button></p>
+              <div id="result"></div>
+
+
+            <br>
+            <button onclick="readValue()">Get the item value</button>
+            <p id="demo"></p>
+            
+            
+            
+            <br>
+            <br>   
+        </div> 
+    </div>
+
+
+
+
+</div>
+
+</body>
+
+</html>
